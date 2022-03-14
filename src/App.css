@@ -13,11 +13,18 @@
   display: flex;
   height: 100vh;
 }
-.title{
-}
 .App{
   align-items: center;
   justify-content: center;
   display: flex;
   flex-direction: column;
+}
+.reset{
+  margin: 4vh;
+}
+.case{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 2;
 }

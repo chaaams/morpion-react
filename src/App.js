@@ -1,16 +1,15 @@
 import './App.css';
 import Player from "./components/Player"
 import React from 'react';
-import Board from "./components/Board"
+// import Board from "./components/Board"
+// import SquareTest from "./components/SquareTest"
 
 function App() {
   return (
     <div className='App'>
       <h1 className='title'>Jeux du Morpion</h1>
       <Player>Clik</Player>
-      <Board></Board>
-      <Player></Player>
-
+      {/* <Board></Board> */}
     </div>
   );
 }
