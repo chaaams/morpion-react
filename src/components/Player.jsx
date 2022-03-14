@@ -9,7 +9,7 @@ class Player extends React.Component{
     
         
     }
-    
+
     switchClik=()=>{
         if(this.state.player === "X"){
             this.setState({
