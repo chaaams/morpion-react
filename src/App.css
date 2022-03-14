@@ -1,6 +1,16 @@
+#root{
+  background-color: aqua;
+  background-image: url(./assets/tic-tac-tac.jpg);
+  background-size: 300px 100px;;
+  color: black;
+  text-align: center;
+  font-family: sansita
+}
+
 .grid{
   display: grid;
   grid-template-columns:1fr 1fr 1fr;
+  background-color: white
 }
 .case{
   height: 100px;
@@ -13,11 +23,32 @@
   display: flex;
   height: 100vh;
 }
-.title{
+/* .title{
+  margin-top: auto;
+  margin-left: 340px;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+.second-title{
+  
+  margin-right: 340px;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}  */
+/* .title-container{
+  display: flex;
+  justify-content: space-evenly;
+  text-orientation: upright;
+} */
+.title-container > *{
+  text-orientation: upright;
 }
 .App{
   align-items: center;
   justify-content: center;
   display: flex;
   flex-direction: column;
+}
+.ou{
+  text-align: center;
 }
