@@ -1,7 +1,8 @@
 import './App.css';
 import Player from "./components/Player"
 import React from 'react';
-import Board from "./components/Board"
+// import Board from "./components/Board"
+// import SquareTest from "./components/SquareTest"
 
 
 function App() {
@@ -12,9 +13,7 @@ function App() {
         <span className='second-title'> Tic Tac Toe </span>
       </div>
       <Player>Clik</Player>
-      <Board></Board>
-      <Player></Player>
-
+      {/* <Board></Board> */}
     </div>
   );
 }
