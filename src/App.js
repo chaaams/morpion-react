@@ -9,6 +9,7 @@ function App() {
       <h1 className='title'>Jeux du Morpion</h1>
       <Player>Clik</Player>
       <Board></Board>
+      <Player></Player>
 
     </div>
   );
