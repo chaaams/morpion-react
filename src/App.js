@@ -5,7 +5,7 @@ import Board from "./components/Board"
 
 function App() {
   return (
-    <div>
+    <div className='App'>
       <h1 className='title'>Jeux du Morpion</h1>
       <Player>Clik</Player>
       <Board></Board>
