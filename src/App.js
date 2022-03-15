@@ -21,7 +21,7 @@ class App extends React.Component {
 switchClik=(e)=>{
   if (this.state.isWin ===false){
       
-      console.log(e.target.id);
+      console.log("App.js",e.target.id);
       let grid = [...this.state.grid]
       let id = e.target.id;
       console.log(grid[id]);
@@ -43,30 +43,30 @@ switchClik=(e)=>{
           }
           if(grid[0]===grid[1]&&grid[2]===grid[1] && grid[0] !== ""){
               this.setState({isWin : true })
-               return alert('win');
+               return alert('Le vainqueur est '+ this.state.player);
           }else if (grid[3]===grid[4]&&grid[5]===grid[3]&& grid[3] !==""){
               this.setState({isWin : true })
-              return alert("double win")
+              return alert("Le vainqueur est",+ this.state.player)
 
           }else if (grid[6]===grid[7]&&grid[8]===grid[6]&& grid[6]!==""){
               this.setState({isWin : true })
-              return alert("triple win")
+              return alert('Le vainqueur est '+ this.state.player)
 
           }else if (grid[0]===grid[3]&&grid[6]===grid[3]&&grid[3]!==""){
               this.setState({isWin : true })
-              return alert("ligne 1 vertical")
+              return alert('Le vainqueur est '+ this.state.player)
           }else if (grid[1]===grid[4]&& grid[7]===grid[4]&&grid[4]!==""){
               this.setState({isWin : true })
-              return alert("ligne 2 vertical")
+              return alert('Le vainqueur est '+ this.state.player)
           }else if (grid[2]===grid[5]&&grid[8]===grid[5]&&grid[5] !==""){
               this.setState({isWin : true })
-              return alert ("ligne 3 vertical")
+              return alert ('Le vainqueur est '+ this.state.player)
           }else if (grid[0]===grid[4]&&grid[8]===grid[4]&&grid[4]!==""){
               this.setState({isWin : true })
-              return alert("diagonal one")
+              return alert('Le vainqueur est '+ this.state.player)
           }else if (grid[6]===grid[4]&&grid[2]===grid[4]&& grid[4]!==""){
               this.setState({isWin : true })
-              return alert("diagonal two")
+              return alert('Le vainqueur est '+ this.state.player)
           }
 
  }

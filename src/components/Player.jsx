@@ -17,7 +17,7 @@ class Player extends React.Component{
 
     switchClik=(e)=>{
         if (this.state.isWin ===false){
-            console.log(e.target.id);
+            console.log("Player.jsx",e.target.id);
             let grid = [...this.state.grid]
             let id = e.target.id;
             console.log(grid[id]);
