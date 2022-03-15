@@ -1,6 +1,6 @@
 #root{
   background-color: aqua;
-  background-image: url(./assets/morpion.png);
+  background-image: url(./assets/tic-tac-tac.jpg);
   background-size: 100px;
   color: black;
   text-align: center;
@@ -65,7 +65,7 @@
   align-items: center;
   justify-content: center;
   display: flex;
-  font-size: 2;
+  font-size: 10em;
   border-radius: 2px;
 }
 
@@ -133,7 +133,4 @@
  }
  .cart > h3{
    text-decoration:underline;
- }
- .cart-players{
-   display: block;
  }
