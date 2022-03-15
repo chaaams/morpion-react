@@ -9,6 +9,7 @@ class Player extends React.Component{
             counter:0 ,
             grid :["","","","","","","","",""],
             isWin : false
+               
         }
     
         
@@ -16,7 +17,6 @@ class Player extends React.Component{
 
     switchClik=(e)=>{
         if (this.state.isWin ===false){
-            
             console.log(e.target.id);
             let grid = [...this.state.grid]
             let id = e.target.id;
@@ -39,30 +39,35 @@ class Player extends React.Component{
                 }
                 if(grid[0]===grid[1]&&grid[2]===grid[1] && grid[0] !== ""){
                     this.setState({isWin : true })
-                     return alert('win');
+                     return alert('Victory');
+                     
                 }else if (grid[3]===grid[4]&&grid[5]===grid[3]&& grid[3] !==""){
                     this.setState({isWin : true })
-                    return alert("double win")
+                    return alert("Victory")
 
                 }else if (grid[6]===grid[7]&&grid[8]===grid[6]&& grid[6]!==""){
                     this.setState({isWin : true })
-                    return alert("triple win")
+                    return alert("victory")
 
                 }else if (grid[0]===grid[3]&&grid[6]===grid[3]&&grid[3]!==""){
                     this.setState({isWin : true })
-                    return alert("ligne 1 vertical")
+                    return alert("Victory")
+
                 }else if (grid[1]===grid[4]&& grid[7]===grid[4]&&grid[4]!==""){
                     this.setState({isWin : true })
-                    return alert("ligne 2 vertical")
+                    return alert("Victory")
+
                 }else if (grid[2]===grid[5]&&grid[8]===grid[5]&&grid[5] !==""){
                     this.setState({isWin : true })
-                    return alert ("ligne 3 vertical")
+                    return alert ("Victory")
+
                 }else if (grid[0]===grid[4]&&grid[8]===grid[4]&&grid[4]!==""){
                     this.setState({isWin : true })
-                    return alert("diagonal one")
+                    return alert("Victory")
+
                 }else if (grid[6]===grid[4]&&grid[2]===grid[4]&& grid[4]!==""){
                     this.setState({isWin : true })
-                    return alert("diagonal two")
+                    return alert("Victory")
                 }
 
        }
@@ -82,6 +87,9 @@ class Player extends React.Component{
                 grid : grid,
                 isWin : false
             })
+
+            
+            
         
     }
 
