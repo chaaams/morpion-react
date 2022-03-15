@@ -6,6 +6,10 @@
   text-align: center;
   font-family: sansita
 }
+.title-container{
+  display: flex;
+  justify-content: space-around;
+}
 
 .grid{
   display: grid;
@@ -25,8 +29,8 @@
 }
 .App{
   align-items: center;
-  justify-content:space-around;
-  display: flex;
+  /* justify-content:space-around; */
+  /* display: flex; */
   /* flex-direction:row; */
   height: 100vh;
 }
