@@ -1,20 +1,16 @@
 import React from "react";
 import Player from "./Player";
 
-function Cart(){
-    const monsterPrice = 8;
-    const lierrePrice = 10;
-    const bouquetPrice = 16;
+function Cart(props){
     return(
         <div className='cart'>
-            <h3>Jeu du morpion</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque iusto quos necessitatibus odit
-                 recusandae enim quo vitae fuga ratione officia libero,
-                  soluta doloremque iure dolorum veniam omnis aperiam aut.
-                   Veniam nisi, eaque provident qui minus consectetur accusantium dicta tempore
-                    illo labore, facilis porro ullam dolor? Alias dolorum totam odit maxime!
+            <h3>Règles</h3>
+            <p>
+                Le premier joueur a aligner 3 symboles identiques gagne la partie. Attention, le joueur qui débute est toujours avantagé pour gagner. Pensez donc à alterner !
             </p>
-            <button className="reset">reset</button>
+            <p className="cart-players">Joueur 1:</p> <p className="cart-players">Joueur 2: </p> 
+            <button className='btn-grad' onClick={props.reset}>Mise a zéro du tableau</button>
+            <button className='btn-grad' onClick={props.reset}>Mise a zéro du score</button>
             
         </div>
     )

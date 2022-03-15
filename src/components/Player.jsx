@@ -98,19 +98,19 @@ class Player extends React.Component{
     render(){
         return(
         <div>
-            <div className="grid" onClick={this.switchClik}>
-                    <div className="case" id="0">{this.state.grid[0]}</div>
-                    <div className="case" id="1">{this.state.grid[1]}</div>
-                    <div className="case" id="2">{this.state.grid[2]}</div>
-                    <div className="case" id="3">{this.state.grid[3]}</div>
-                    <div className="case" id="4">{this.state.grid[4]}</div>
-                    <div className="case" id="5">{this.state.grid[5]}</div>
-                    <div className="case" id="6">{this.state.grid[6]}</div>
-                    <div className="case" id="7">{this.state.grid[7]}</div>
-                    <div className="case" id="8">{this.state.grid[8]}</div>
+            <div className="grid" onClick={this.props.switchClik}>
+                    <div className="case" id="0">{this.props.grid[0]}</div>
+                    <div className="case" id="1">{this.props.grid[1]}</div>
+                    <div className="case" id="2">{this.props.grid[2]}</div>
+                    <div className="case" id="3">{this.props.grid[3]}</div>
+                    <div className="case" id="4">{this.props.grid[4]}</div>
+                    <div className="case" id="5">{this.props.grid[5]}</div>
+                    <div className="case" id="6">{this.props.grid[6]}</div>
+                    <div className="case" id="7">{this.props.grid[7]}</div>
+                    <div className="case" id="8">{this.props.grid[8]}</div>
                </div>
 
-            <button className='reset' onClick={this.reset}>Reset</button>
+            
 
         </div>
         )
