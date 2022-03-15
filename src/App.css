@@ -4,7 +4,8 @@
   background-size: 100px;
   color: black;
   text-align: center;
-  font-family: sansita
+  font-family: 'Indie Flower';
+  font-weight: bold;
 }
 .title-container{
   display: flex;
@@ -34,14 +35,38 @@
   /* flex-direction:row; */
   height: 100vh;
 }
-.reset{
-  margin: 4vh;
-}
+/* .reset{
+  margin: 4vh; 
+} */
+
+.btn-grad {background-image: linear-gradient(to left, #2F7336 0%, #AA3A38  51%, #2F7336  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   /* text-transform: uppercase; */
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   font-family: 'Indie Flower';
+   font-weight: bolder;
+ 
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
 .case{
   align-items: center;
   justify-content: center;
   display: flex;
   font-size: 2;
+  border-radius: 2px;
 }
 
 
@@ -100,8 +125,15 @@
 .cart{
   padding: 32px 32px 0 32px;
   color: white;
-  background-color: #31b572;
-  max-width: 250px;
+  background-color: #DC143C;
+  max-width: 290px;
+  border-radius: 20px;
  
  
+ }
+ .cart > h3{
+   text-decoration:underline;
+ }
+ .cart-players{
+   display: block;
  }
