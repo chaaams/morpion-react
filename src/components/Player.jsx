@@ -101,7 +101,9 @@ class Player extends React.Component{
                     <div className="case" id="7">{this.state.grid[7]}</div>
                     <div className="case" id="8">{this.state.grid[8]}</div>
                </div>
+
             <button className='reset' onClick={this.reset}>Reset</button>
+
         </div>
         )
     }
