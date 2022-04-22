@@ -23,8 +23,6 @@ function Cart(props){
             </p>
 
              {renderWin()}
-
-            <button className='btn-grad' onClick={props.reset}>Mise a zéro du tableau</button>
             <button className='btn-grad' onClick={props.reset}>Mise a zéro du score</button>
             
         </div>

@@ -2,8 +2,7 @@ import './App.css';
 import Player from "./components/Player"
 import React from 'react';
 import Cart from './components/Cart';
-// import Board from "./components/Board"
-// import SquareTest from "./components/SquareTest"
+
 
 
 class App extends React.Component {
